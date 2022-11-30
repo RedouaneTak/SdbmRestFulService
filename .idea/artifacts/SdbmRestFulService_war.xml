@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SdbmRestFulService:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SdbmRestFulService</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SdbmRestFulService-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SdbmRestFulService:war exploded" />
+    </root>
+  </artifact>
+</component>
