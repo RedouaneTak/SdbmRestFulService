@@ -3,6 +3,7 @@ package fr.rt.sdbmrestfulservice;
 import fr.rt.sdbmrestfulservice.dao.DaoFactory;
 import fr.rt.sdbmrestfulservice.metier.Continent;
 import fr.rt.sdbmrestfulservice.metier.Couleur;
+import fr.rt.sdbmrestfulservice.security.Tokened;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.ws.rs.*;
@@ -34,6 +35,7 @@ public class CouleurRessource {
         return Response.ok(couleur).build();
     }
 
+    @Tokened
     @POST
     public Response insert(Couleur couleur){
 
@@ -47,6 +49,7 @@ public class CouleurRessource {
             return Response.status(Response.Status.BAD_REQUEST).build();
     }
 
+    @Tokened
     @PUT
     @Path("{id}")
     public Response update( @PathParam("id")Integer id, Couleur couleur){
@@ -64,7 +67,7 @@ public class CouleurRessource {
         else
             return Response.status(Response.Status.BAD_REQUEST).build();
     }
-
+    @Tokened
     @DELETE
     @Consumes(MediaType.APPLICATION_JSON)
     @Path("{id}")

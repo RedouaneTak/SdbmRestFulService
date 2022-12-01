@@ -21,3 +21,9 @@ k
 ;src/main/java/fr/rt/sdbmrestfulservice/MarqueRessource.java,c\2\c26b93b02933e150b5e0e6399424a23dfe5b3a9e
 i
 9src/main/java/fr/rt/sdbmrestfulservice/HelloResource.java,c\2\c2043fb6a9ba147041025f643d9362d952b831cc
+V
+&src/main/webapp/swagger-initializer.js,c\6\c62bde92f5c0bced3a82c459c1995cddfeacfdd9
+l
+<src/main/java/fr/rt/sdbmrestfulservice/HelloApplication.java,b\d\bd5db7602ab67b072ded6a78c182f40ca13be365
+n
+>src/main/java/fr/rt/sdbmrestfulservice/FabricantRessource.java,5\e\5e9f9b655265c5009a671cb7a53c06522886b178
