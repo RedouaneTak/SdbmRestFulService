@@ -4,6 +4,7 @@ import fr.rt.sdbmrestfulservice.dao.DaoFactory;
 import fr.rt.sdbmrestfulservice.metier.Article;
 import fr.rt.sdbmrestfulservice.metier.Continent;
 import fr.rt.sdbmrestfulservice.metier.Couleur;
+import fr.rt.sdbmrestfulservice.security.Tokened;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.models.security.SecurityScheme;
@@ -33,6 +34,7 @@ public class ArticleRessource {
         return Response.ok(article).build();
     }
 
+    @Tokened
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public Response insert(Article article){
@@ -45,6 +47,7 @@ public class ArticleRessource {
 
 
 
+    @Tokened
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Path("{id}")
@@ -66,6 +69,7 @@ public class ArticleRessource {
         }
     }
 
+    @Tokened
     @DELETE
     @Consumes(MediaType.APPLICATION_JSON)
     @Path("{id}")
