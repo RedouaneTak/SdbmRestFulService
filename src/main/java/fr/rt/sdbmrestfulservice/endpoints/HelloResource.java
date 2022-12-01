@@ -1,4 +1,4 @@
-package fr.rt.sdbmrestfulservice;
+package fr.rt.sdbmrestfulservice.endpoints;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.ws.rs.GET;

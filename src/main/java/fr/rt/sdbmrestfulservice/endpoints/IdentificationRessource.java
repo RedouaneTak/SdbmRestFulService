@@ -1,4 +1,4 @@
-package fr.rt.sdbmrestfulservice;
+package fr.rt.sdbmrestfulservice.endpoints;
 
 
 import fr.rt.sdbmrestfulservice.security.MyToken;

@@ -109,6 +109,7 @@ public class ArticleDAO extends DAO<Article, ArticleSearch> {
             }
             rs.close();
 
+
         }
         // Handle any errors that may have occurred.
         catch (Exception e) {
@@ -178,15 +179,14 @@ public class ArticleDAO extends DAO<Article, ArticleSearch> {
 
 
 
-            //pStmt.executeQuery();
             pStmt.executeUpdate();
-
 
             return true;
         }
 
         // Handle any errors that may have occurred.
         catch (Exception e) {
+
 
             e.printStackTrace();
             return false;
@@ -217,9 +217,9 @@ public class ArticleDAO extends DAO<Article, ArticleSearch> {
 
 
 
-            //pStmt.executeQuery();
-            int r = pStmt.executeUpdate();
-            System.out.println("retour : "+r);
+            pStmt.executeUpdate();
+
+
 
             return true;
         }
@@ -250,9 +250,8 @@ public class ArticleDAO extends DAO<Article, ArticleSearch> {
 
 
 
-            //pStmt.executeQuery();
             int r = pStmt.executeUpdate();
-            System.out.println("retour : "+r);
+
             if(r==0){
                 return false;
             }else{
