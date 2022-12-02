@@ -47,12 +47,8 @@ i
 9src/main/java/fr/rt/sdbmrestfulservice/dao/MarqueDAO.java,5\8\58f4d65cdaa07811e017a38c0201b42d26f670a3
 l
 <src/main/java/fr/rt/sdbmrestfulservice/dao/TypeBiereDAO.java,1\8\187979b088b0bd99b8e2d7f0f20b2e1452d41eb1
-x
-Hsrc/main/java/fr/rt/sdbmrestfulservice/endpoints/FabricantRessource.java,2\e\2ea909fe3ee9c558de408cc33a2266ec2e316cb8
 c
 3src/main/java/fr/rt/sdbmrestfulservice/dao/DAO.java,d\7\d78bb03712032a4c0057c6570a0e31fa94c375bb
-x
-Hsrc/main/java/fr/rt/sdbmrestfulservice/endpoints/ContinentRessource.java,9\b\9bfa38405920b069e3806c7296ba6a7298f4ebe3
 l
 <src/main/java/fr/rt/sdbmrestfulservice/security/MyToken.java,8\b\8beb1bb83920defa7a6b7e91e0a470aad9a3326d
 s

@@ -1,3 +1,5 @@
+package fr.rt.sdbmrestfulservice.endpoints;
+
 import fr.rt.sdbmrestfulservice.endpoints.HelloResource;
 import jakarta.servlet.http.HttpServletResponse;
 import org.jboss.resteasy.mock.MockDispatcherFactory;
@@ -30,6 +32,7 @@ public class HelloRessourceTest {
             response = new MockHttpResponse();
 
             dispatcher.invoke(request, response);
+
             assertEquals(HttpServletResponse.SC_OK, response.getStatus());
             assertEquals("Hello World!", response.getContentAsString());
         }
